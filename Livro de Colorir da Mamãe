@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livro de Colorir da Mamãe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka One', cursive;
+      background-color: #ffd7ec;
+      color: #4d2c3d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    .capa {
+      text-align: center;
+    }
+    .capa img {
+      max-width: 80%;
+      border: 8px dashed #fff;
+      border-radius: 20px;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .botao-livro {
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background-color: #ff77b3;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      color: white;
+      cursor: pointer;
+    }
+    .paginas {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .pagina {
+      width: 250px;
+      height: auto;
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      margin: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Livro de Colorir da Mamãe 💖</h1>
+  </header>
+  <div class="capa">
+    <img src="A_coloring_book_illustration_in_black_and_white_li.png" alt="Capa do Livro" />
+    <br>
+    <button class="botao-livro" onclick="abrirLivro()">Entrar no Livro 🎨</button>
+  </div>
+  <div class="paginas" id="paginas">
+    <img src="A_coloring_book_illustration_in_black_and_white_li.png" class="pagina" alt="Página 1" />
+    <!-- Aqui você pode adicionar mais páginas como imagens -->
+  </div>
+  <footer>
+    Feito com carinho 💕
+  </footer>  <script>
+    function abrirLivro() {
+      document.querySelector('.capa').style.display = 'none';
+      document.getElementById('paginas').style.display = 'flex';
+    }
+  </script></body>
+</html>
